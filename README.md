@@ -31,7 +31,7 @@
 
 ### Сборка из исходников (достаточно Command Line Tools, без Xcode)
 ```bash
-git clone https://github.com/<your-username>/GrokHead.git
+git clone https://github.com/zazopro/GrokHead.git
 cd GrokHead
 bash build_app.sh
 open GrokHead.app
