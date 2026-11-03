@@ -18,6 +18,20 @@
 - **`error`** — грустная мимика, красное кольцо и отдельный сигнал ошибки.
 
 
+### Подключить к Grok Bot (или другому ИИ-агенту)
+GrokHead не видит работу бота напрямую — бот сам сообщает статус файлом. Один раз отправьте своему Grok Bot это сообщение:
+
+```text
+Запомни навсегда: у меня на Mac стоит GrokHead. В КАЖДОЙ задаче, даже маленькой,
+первым действием на моём Mac выполняй:
+echo '{"id":"<id>","title":"<кратко задача>","status":"working"}' > ~/Downloads/grokhead/working-$(date +%s).json
+а последним действием перед ответом — то же с тем же id и "status":"done"
+(или "error", если не получилось) в файл done-$(date +%s).json / error-$(date +%s).json.
+Для длинных задач можно обновлять "progress" от 0 до 1.
+```
+
+Бот должен иметь доступ к вашему Mac (локальное выполнение команд). Клик по голове открывает ссылку из настроек — вставьте туда ссылку на чат вашего бота (`grokbot://app/v1/agent?id=...`).
+
 ### Настройки
 
 | Общие | Звук и «Не беспокоить» | Экран и система |
@@ -72,6 +86,17 @@ open "grokhead://error?id=t1&title=Timeout"
 ---
 
 ## 🇬🇧 English
+
+### Connect to Grok Bot (or any AI agent)
+GrokHead can't see the bot's work directly; the bot reports status via files. Send your bot this once:
+
+```text
+Remember permanently: I run GrokHead on my Mac. In EVERY task, even small ones,
+first run on my Mac:
+echo '{"id":"<id>","title":"<short task>","status":"working"}' > ~/Downloads/grokhead/working-$(date +%s).json
+and as the last step before replying, the same id with "status":"done"
+(or "error") into done-$(date +%s).json / error-$(date +%s).json.
+```
 
 ### Settings
 
