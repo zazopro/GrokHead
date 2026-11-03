@@ -18,6 +18,12 @@
 - **`error`** — грустная мимика, красное кольцо и отдельный сигнал ошибки.
 
 
+### Настройки
+
+| Общие | Звук и «Не беспокоить» | Экран и система |
+|---|---|---|
+| ![](docs/settings-general.png) | ![](docs/settings-sound.png) | ![](docs/settings-system.png) |
+
 ### Установка из Releases (готовый `GrokHead.app.zip`)
 1. Скачайте `GrokHead.app.zip` из раздела **Releases** на GitHub и распакуйте в `/Applications`.
 2. Поскольку приложение распространяется без платного сертификата Apple Developer ID, при первом запуске снимите карантин одним из способов:
@@ -66,6 +72,12 @@ open "grokhead://error?id=t1&title=Timeout"
 ---
 
 ## 🇬🇧 English
+
+### Settings
+
+![General](docs/settings-general.png)
+![Sound](docs/settings-sound.png)
+![Display & System](docs/settings-system.png)
 
 ### Overview
 **GrokHead** is a tiny native macOS menu-bar utility (`LSUIElement = YES`) displaying an always-on-top circular bot head rendered procedurally via `Core Animation`:
